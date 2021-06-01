@@ -318,10 +318,6 @@ DWORD WINAPI somethingcool (LPVOID lpParam)
         visited[i] = 0;
         for ( int j = 0; j < 11; j++ ) spanningTree[i][j] = 0;
     }
-
-    //included = visited
-    //tree = spanningTree
-
     visited[0] = 1;
 
     int from, to, weight;
@@ -370,7 +366,7 @@ void checkanddraw ( HDC hdc )
 
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
-char ProgName[] = "Лабораторна робота 6";
+char ProgName[] = "Lab 6";
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int nCmdShow)
 {
@@ -395,7 +391,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
 
 
     hWnd=CreateWindow(ProgName,
-        "Лабораторна робота 6",
+        "Lab 6",
         WS_OVERLAPPEDWINDOW,
         0,
         0,
